@@ -1,0 +1,19 @@
+.title-text, .header-text {
+  color: #f1cbbc;
+  text-align: center;
+}
+
+.title-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar-orange {
+  background-color: #86331e;
+}
+
+.header-text:hover, .title-text:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=header.css.map */

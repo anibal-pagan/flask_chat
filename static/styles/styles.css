@@ -1,0 +1,105 @@
+#chat_name, #create_chat_button, .element, #search, #search_button {
+  margin: 2%;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    height: 100%;
+    line-height: 100%;
+    padding: 2%;
+  }
+  75% {
+    opacity: 0;
+    height: 100%;
+    line-height: 100%;
+    padding: 2%;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+    line-height: 0px;
+    padding: 0px;
+  }
+}
+.container {
+  padding: 2%;
+}
+
+.error {
+  color: red;
+}
+
+.chat {
+  color: black;
+  font-weight: bold;
+}
+
+textarea {
+  width: 80%;
+}
+
+.other-message {
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.my-message {
+  background-color: orange;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.deletable {
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.bottom-chat {
+  padding: 2%;
+}
+
+.delete {
+  float: right;
+  display: none;
+}
+
+.my-message:hover .delete {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+
+  .chat-name {
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) and (min-width: 680px) {
+  body {
+    padding-top: 110px;
+    padding-bottom: 65px;
+  }
+
+  .chat-name {
+    justify-content: center;
+  }
+}
+@media (max-width: 679px) {
+  body {
+    padding-top: 140px;
+    padding-bottom: 65px;
+  }
+
+  .chat-name {
+    justify-content: right;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

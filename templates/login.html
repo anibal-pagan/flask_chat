@@ -1,0 +1,23 @@
+{% extends "header.html" %}
+
+{% block title %}
+    Flack
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-10 col-md-8">
+                <form id="signup">
+                    <h3 style="text-align: center;">Sign up</h3>
+                    <p class="error">{{ error }}</p>
+                    <div class="form-group">
+                        <label for="text">Username</label>
+                        <input type="text" id="text" name="username" class="form-control">
+                    </div>
+                    <button class="btn btn-outline-dark" type="submit">Start chatting</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

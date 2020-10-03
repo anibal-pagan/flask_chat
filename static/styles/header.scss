@@ -1,0 +1,31 @@
+$header: #86331e;
+$beige: #f1cbbc;
+$text-selected: white;
+$header-selected: #e48a66;
+
+%header-text {
+    color: $beige;
+    text-align: center;
+}
+
+%title-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-orange {
+    background-color: $header;
+}
+
+.header-text {
+    @extend %header-text;
+}
+
+.title-text {
+    @extend %header-text;
+    @extend %title-text;
+}
+
+.header-text:hover, .title-text:hover {
+    color: $text-selected;
+}
